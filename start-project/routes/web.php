@@ -13,12 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('home');
+  return view('home');
 })->name('home');
 
-//Route::get('/eixo', 'App\Http\Controllers\EixoController@index')->name('eixo.index');
+Route::get('/borboleta', 'App\Http\Controllers\BorboletaController@index')->name('borboleta.index');
 //Route::get('/eixo/create', 'App\Http\Controllers\EixoController@create')->name('eixo.create');
 //Route::post('/eixo', 'App\Http\Controllers\EixoController@store')->name('eixo.store');
-Route::resource('/eixo', 'App\Http\Controllers\EixoController');
-Route::resource('/curso', 'App\Http\Controllers\CursoController');
+//Route::resource('/eixo', 'App\Http\Controllers\EixoController');
+//Route::resource('/curso', 'App\Http\Controllers\CursoController');
